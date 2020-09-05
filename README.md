@@ -1,2 +1,2 @@
-# TwitterWithAngular
+Twitter with Angular
 This project is an attempt to recreate some of Twitter's functions using its API, with Angular.
