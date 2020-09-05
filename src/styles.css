@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap');
+
+body {
+  margin: 0;
+  background: #D3CCE3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 100px;
+}
+
+.section-title {
+  margin-left: 15px;
+  font-family: 'Baloo Chettan 2', cursive;
+  color: grey;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(141, 133, 133, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Tweet list */
+
+.tweet-list {
+  list-style: none;
+  margin: 8px 4px 0;
+  padding: 0;
+  margin: 25px 150px 25px 150px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media all and (max-width: 699px) {
+  .tweet-list {
+    margin: 25px 30px 25px 30px;
+  }
+}
+
+@media all and (max-width: 699px) and (min-width: 520px) {
+  .tweet-list {
+    margin: 25px 80px 25px 80px;
+  }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  .tweet-list {
+    margin: 25px 110px 25px 110px;
+  }
+}

@@ -1,0 +1,43 @@
+<header class="config-header">
+  Hide tweets from...
+</header>
+<hr>
+<section class="config-section">
+  <div class="config-form">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" [(ngModel)]="homeOptions.hideNotVerified" type="checkbox" name="check"> <span
+          class="form-text-label-text">People who have
+          not verified the account</span>
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" [(ngModel)]="homeOptions.hideNotFollowed" type="checkbox" name="check"> <span
+          class="form-text-label-text">People who do
+          not follow</span>
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" [(ngModel)]="homeOptions.hideDefaultProfile" type="checkbox" name="check"> <span
+          class="form-text-label-text">People who have
+          default profile information</span>
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" [(ngModel)]="homeOptions.hideWithLink" type="checkbox" name="check"> <span
+          class="form-text-label-text">Tweets that
+          contains a link</span>
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" [(ngModel)]="homeOptions.hideTextTruncated" type="checkbox" name="check"> <span
+          class="form-text-label-text">Tweets that has
+          text truncated</span>
+      </label>
+    </div>
+  </div>
+</section>

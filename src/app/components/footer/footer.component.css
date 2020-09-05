@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.site-footer {
+  background-color: rgba(106, 166, 221, 0.781);
+  text-align: center;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 4px 2px 4px -1px rgba(0, 0, 0, 0.212);
+}
+
+.footer-text {
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  color: white;
+}

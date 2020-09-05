@@ -1,0 +1,31 @@
+<div *ngIf="tweet" class="tweet-card">
+  <a class="tweet-link" routerLink="/detail/{{tweet.id_str}}">
+    <div class="tweet-content">
+      <div class="tweet-header">
+        <span class="tweet-name">
+          <strong>{{tweet.user.name}}</strong>
+        </span>
+        <img class="tweet-verified" *ngIf="tweet.user.verified" src="assets/images/twitter-verified-badge.svg"
+          alt="">
+        <span class="tweet-username"> @{{tweet.user.screen_name}}</span>
+        <span class="tweet-date"> · {{tweet.created_at | amTimeAgo}}</span>
+      </div>
+      <img class="tweet-card-avatar" [src]="tweet.user.profile_image_url" alt="">
+      <div class="tweet-text">
+        <p class="" lang="es">
+          {{tweet.text}}
+        </p>
+      </div>
+      <div class="tweet-footer">
+        <a class="tweet-footer-item">
+          <fa-icon class="tweet-footer-item-icon" [icon]="faRetweet"></fa-icon><span class="tweet-footer-item-icon">
+            {{tweet.retweet_count}}</span>
+        </a>
+        <a class="tweet-footer-item">
+          <fa-icon class="tweet-footer-item-icon" [icon]="faHeart"></fa-icon><span class="tweet-footer-item-icon">
+            {{tweet.favorite_count}}</span>
+        </a>
+      </div>
+    </div>
+  </a>
+</div>

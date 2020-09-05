@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2|Quicksand&display=swap');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.config-header {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 60px;
+  padding-top: 20px;
+}
+
+.config-section {
+  margin: 35px 15px 10px 15px;
+}
+
+.config-form {
+  background-color: rgba(255, 255, 255, 0.459);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.form-check {
+  margin: 15px;
+  vertical-align: middle;
+}
+
+.form-check-label {
+  position: relative;
+  cursor: pointer;
+  color: #808080;
+}
+
+.form-check-input {
+  position: absolute;
+  right: 9000px;
+}
+
+.form-text-label-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+}
+
+.form-check-input+.form-text-label-text:before {
+  content: "\f096";
+  font-family: "FontAwesome";
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.form-check-input:checked+.form-text-label-text:before {
+  content: "\f14a";
+  color: #2980b9;
+  animation: effect 250ms ease-in;
+}
+
+.form-check-input:disabled+.form-text-label-text {
+  color: #aaa;
+}
+
+.form-check-input:disabled+.form-text-label-text:before {
+  content: "\f0c8";
+  color: #ccc;
+}
+
+@keyframes effect {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  75% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

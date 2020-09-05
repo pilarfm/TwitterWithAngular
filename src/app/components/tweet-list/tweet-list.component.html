@@ -1,0 +1,9 @@
+<ngx-spinner></ngx-spinner>
+<section infiniteScroll [infiniteScrollDistance]="0.5" (scrolled)="getTweets()">
+  <ol class="tweet-list">
+    <li *ngFor="let tweet of tweets">
+      <app-tweet [tweet]="tweet"></app-tweet>
+    </li>
+  </ol>
+  <app-scroll-button></app-scroll-button>
+</section>

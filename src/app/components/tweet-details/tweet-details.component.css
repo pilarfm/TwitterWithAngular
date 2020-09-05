@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2|Quicksand&display=swap');
+
+.back-button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.detail-header {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.detail-container {
+  padding: 20px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+
+@media all and (max-width: 699px) and (min-width: 520px) {
+  .detail-container {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .detail-container {
+    width: 70%;
+  }
+}
+
+.go-back-arrow {
+  color: rgb(106, 166, 221);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.user-details {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 10px;
+  justify-items: start;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.name {
+  padding-top: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date-details {
+  color: grey;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.retweet {
+  word-spacing: 10px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.icons {
+  margin: 50px 0;
+  
+  text-align: left;
+
+}
+
+@media all and (max-width: 699px) {
+  .icons {
+    text-align: justify;
+  }
+}
+
+.heart-icon {
+  font-size: 25px;
+  margin-right: 75px;
+  background-color: rgb(255, 0, 106);
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+}
+
+.retweet-icon {
+  font-size: 25px;
+  margin-right: 75px;
+  background-color: rgb(90, 184, 90);
+  border-radius: 50%;
+  padding: 15px 13px;
+  color: white;
+}
+
+.comment-icon {
+  font-size: 25px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+}
+.tweet-media-img{
+  max-width:90%;
+}

@@ -1,0 +1,33 @@
+<header class="detail-header">
+  <a class="back-button" (click)="goBack()">
+    <fa-icon [icon]="faArrowLeft" class="go-back-arrow"></fa-icon>
+  </a>
+  Tweet
+</header>
+<hr>
+<div *ngIf="tweet" class="detail-container">
+  <div class="user-details">
+    <img class="user-avatar" [src]="tweet.user.profile_image_url" alt="profile image">
+    <div class="name">
+      <div class="user-name">{{tweet.user.name}}</div>
+      <div class="user-screen-name">@{{tweet.user.screen_name}}</div>
+    </div>
+  </div>
+  <div class="tweet-body">
+    <p>{{tweet.text}}</p>
+  </div>
+  <div *ngIf="tweet.entities.media">
+    <img class="tweet-media-img" src="{{tweet.entities.media[0].media_url}}">
+  </div>
+  <div class="date-details">
+    {{tweet.created_at| date:'shortTime'}} - {{tweet.created_at| date:'d MMM yy'}}
+  </div>
+  <hr>
+  <div class="retweet">{{tweet.retweet_count}} Retweets &nbsp; {{tweet.favorite_count}} Likes</div>
+  <hr>
+  <div class="icons">
+    <fa-icon [icon]="faHeart" class="heart-icon"></fa-icon>
+    <fa-icon [icon]="faRetweet" class="retweet-icon"></fa-icon>
+    <fa-icon [icon]="faComment" class="comment-icon"></fa-icon>
+  </div>
+</div>

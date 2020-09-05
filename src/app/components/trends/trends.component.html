@@ -1,0 +1,11 @@
+<div class="trends-container">
+    <h2>Trends For You</h2>
+    <ul class="trends-list">
+        <li (click)="sendTrend(i)" class="trends" *ngFor="let trend of trends; index as i">
+            <div class="trend-name"><span class="order">{{i+1}}</span> {{trend.name}}</div>
+            <div class="tweet-volume" *ngIf="trend.tweet_volume; else elseBlock">{{trend.tweet_volume}} Tweets</div>
+            <ng-template #elseBlock><span class="tweet-volume">0 Tweets</span></ng-template>
+            <hr>
+        </li>
+    </ul>
+</div>

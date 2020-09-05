@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2|Quicksand&display=swap');
+.trends-container {
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.trends {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.trends:hover {
+    cursor: pointer;
+    color: rgba(23, 81, 167, 0.746);
+}
+
+.trends-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tweet-volume {
+    color: grey;
+    margin-left: 35px;
+    font-size: 12px;
+}
+
+.order {
+    margin-right: 20px;
+    color: grey;
+}
+
+.trend-name {
+    margin-bottom: 8px;
+}

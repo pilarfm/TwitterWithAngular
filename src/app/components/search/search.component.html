@@ -1,0 +1,15 @@
+<div class="search-container">
+    <input #term id="search-input" type="text" (keyup.enter)="searchedTerm(term.value)" class="search-input" placeholder="Search...">
+    <button type="button" (click)="searchedTerm(term.value)" class="search-button">Search</button>
+</div>
+<hr>
+<section infiniteScroll [infiniteScrollDistance]="0.5" (scrolled)="getMoreTweets(term.value)">
+    <ol class="tweet-list">
+        <li *ngFor="let tweet of tweets">
+            <app-tweet [tweet]="tweet"></app-tweet>
+        </li>
+    </ol>
+    <ngx-spinner></ngx-spinner>
+    <app-scroll-button></app-scroll-button>
+    <app-trends (trendTerm)="searchedTerm($event)" type="button" (click)="show = false" *ngIf="show"></app-trends>
+</section>

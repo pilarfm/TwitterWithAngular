@@ -1,0 +1,25 @@
+<header class="top-bar-header">
+  <h1 class="top-bar-title">{{ title }}</h1>
+  <nav class="main-navigation">
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <a class="nav-list-button" [routerLink]="[ROOT]" routerLinkActive="active-nav-list-button"
+          [routerLinkActiveOptions]="{ exact: true }">
+          <mat-icon class="nav-list-item-icon">home</mat-icon>
+        </a>
+      </li>
+      <li class="nav-list-item">
+        <a class="nav-list-button" [routerLink]="[SEARCH]" routerLinkActive="active-nav-list-button"
+          [routerLinkActiveOptions]="{ exact: true }">
+          <mat-icon class="nav-list-item-icon">search</mat-icon>
+        </a>
+      </li>
+      <li class="nav-list-item">
+        <a class="nav-list-button" [routerLink]="[CONFIGURATION]" routerLinkActive="active-nav-list-button"
+          [routerLinkActiveOptions]="{ exact: true }">
+          <mat-icon class="nav-list-item-icon">settings</mat-icon>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
